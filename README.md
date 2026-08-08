@@ -1,27 +1,30 @@
 # Automatic Toll Collection
 
-> **This repository is archived.** The reviewed and corrected version
-> of this project lives in [embedded-iot-projects / toll-collection](https://github.com/Penchal9959/embedded-iot-projects/tree/main/toll-collection), alongside the
-> others from the same series. Work happens there; nothing here changes.
+> **Archived.** The reviewed and corrected version of this project lives in
+> [embedded-iot-projects / toll-collection](https://github.com/Penchal9959/embedded-iot-projects/tree/main/toll-collection), alongside the others from the same series. Work happens there;
+> nothing here changes.
 
----
+## What this was
 
-## Original description
+An RFID toll barrier. A tag on the windscreen is read as the vehicle
+approaches, the toll is deducted from the balance stored on the tag, and a
+servo lifts the barrier without the car stopping. An insufficient balance
+leaves the barrier down and shows the shortfall on the LCD.
 
-This project is an automatic toll collection system using RFID card reader. We can clear the traffic as much as fast at the toll plazas using this system. The vehicle owner should attach the recharged RFID tag in front of the vehicle. The RFID reader placed at the toll collection plaza will automatically read that tag and the money will be deducted from that tag.
+The balance lives on the card rather than in a database, which is what makes
+it a self-contained demonstration rather than half of a system.
 
-Components:
+## Hardware
 
-1.Arduino UNO
-2.RFID module
-3.16x2 LCD
-4.DC Motor
-5.L298N driver Module
-6.9v Battery
-7.Led's
-8.Buzzer
+Arduino UNO, MFRC522 RFID reader, 16x2 LCD, SG90 servo, buzzer, LEDs.
 
-Skills Used:
+## Why it was archived
 
-1.Arduino IDE
-2.RFID Libraries
+Twelve one-off repositories of two files each is not a portfolio, it is a
+list. They were consolidated into one maintained repository with the
+documentation and the build check they never had. This one is kept so
+existing links still resolve.
+
+## Licence
+
+[MIT](LICENSE)
